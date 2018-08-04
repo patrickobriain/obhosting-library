@@ -26,20 +26,13 @@
 
 <!-- Google Analytics -->
 <script type="text/javascript">
-(function(w,d){
-  w.HelpCrunch=function(){w.HelpCrunch.q.push(arguments)};w.HelpCrunch.q=[];
-  function r(){var s=document.createElement('script');s.async=1;s.type='text/javascript';s.src='https://widget.helpcrunch.com/';(d.body||d.head).appendChild(s);}
-  if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}
-})(window, document)
-</script>
-
-<script type="text/javascript">
-  HelpCrunch('init', 'obriainhosting', {
-    applicationId: 3173,
-    applicationSecret: 'C5sbKx97zlYu3GsZVZhPx5qtmKaR37amy1uadHegZmpgnYLQF/Yh5CPGg8h1+zY2+N52wQt9F7Fiw7yOUzUKhA=='
-  });
-
-  HelpCrunch('showChatWidget');
+window.__lc = window.__lc || {};
+window.__lc.license = 10001605;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
 </script>
 <!-- /Google Analytics -->
 
