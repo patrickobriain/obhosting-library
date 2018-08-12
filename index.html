@@ -25,14 +25,21 @@
 <body>
 
 <!-- Google Analytics -->
-<script type="text/javascript">
-window.__lc = window.__lc || {};
-window.__lc.license = 10001605;
-(function() {
-  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-})();
+<script>
+(function(window, document, tag, url, name, wid, a, m) {
+  window[name] = window[name] || function() {
+    (window[name].q = window[name].q || []).push(arguments);
+    document.getElementById("dixa-widget-wrapper") !== null && document.getElementById("dixa-widget-wrapper").contentWindow.postMessage(JSON.stringify(arguments), "*");
+  },
+  window[name].l = 1 * new Date(),
+  window[name].wid = wid,
+  a = document.createElement(tag),
+  m = document.getElementsByTagName(tag)[0],
+  a.async = 1,
+  a.setAttribute("charset", "utf-8"),
+  a.src = url,
+  m.parentNode.insertBefore(a, m)
+})(window, document, "script", "https://widget.dixa.io/assets/scripts/javascript/loader.js", "_dixa", "30a0e2d5-cc70-4550-8804-3438d95de15e");
 </script>
 <!-- /Google Analytics -->
 
